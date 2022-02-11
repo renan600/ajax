@@ -2,7 +2,7 @@ const btnCep = document.querySelector('#btnCep')
 btnCep.addEventListener('click', clicou =>{
     const inputCep = document.querySelector('#cep')
     const cep = inputCep.value.replace('-','')
-    const url = `http://viacep.com.br/ws/${cep}/json`
+    const url = `https://viacep.com.br/ws/${cep}/json`
     const xhr = new XMLHttpRequest(); xhr.open('GET', url, true);
     
     xhr.onreadystatechange = function(){
