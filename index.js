@@ -10,7 +10,7 @@ btnCep.addEventListener('click', clicou =>{
             if(xhr.status == 200) preencherFormulario(JSON.parse(xhr.responseText))
         }
     }
-    xhr.send(url)
+    xhr.send()
 })
 
 function preencherFormulario(json){
